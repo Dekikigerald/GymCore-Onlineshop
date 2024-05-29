@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2B3E51;
+    box-shadow: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color:#2B3E51;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    }
+
+.logo {
+    background-color: white;
+}
+
+.logo img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+    transition: all .6s;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding-right: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-image {
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+    background-image: url("./img/Home\ page\ gym\ store.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image .hero-text {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    
+}
+
+.hero-image .h2 {
+    text-shadow: 10px 10px 20px #000000;
+}
+
+.hero-image .hero-text h1 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.hero-image .hero-btn {
+    text-decoration: none;
+    color: white;
+    background: #2B3E51;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hero-image .hero-btn:hover {
+    background: white;
+    color: #2B3E51;
+}
+
+/* container */ 
+
+.cards{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    height: 200px;
+}
+
+.container {
+    flex: 1;
+    max-width: 25%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    transition: .2s ease;
+}
+
+.container img {
+    height: 200px;
+    width: 100%;
+    background-size: 100% contain;
+}
+
+
+.container:hover {
+    transform:  scale(1.1);
+}
+
+.image-text-c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transform: translate(-50%,-50%);
+    padding: 5px 10px;
+    text-shadow: 3px -1px 3px #2B3E51;
+
+}
+
+/* Home */ 
+#products h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.all-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    overflow: hidden;
+    background: #ffffff;
+    color: #2B3E51;
+    text-align: center;
+    width: 240px;
+    height: 340px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 2rem;
+}
+
+.product:hover img {
+    scale: 1.1;
+
+}
+
+.product:hover {
+    box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+    height: 200px;
+    margin: 1rem;
+    transition: all 0.3s;
+}
+
+.product a:link, .product a:visited {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2B3E51;
+    padding: 1.2rem 3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+
+}
+
+.product a:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px){
+    nav {
+        display: none;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mbl-nav {
+        display: none;
+
+    }
+}
+
+
+
+.mbl-nav {
+    display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 700px;
+    border-radius: 10px 10px 0 0;
+    gap: 150px;
+    position: fixed;
+
+}
+
+.mbl-nav img {
+    width: 50px;
+}
+
+
+/*contact*/
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #E8F1F5;
+    padding: 50px 1px 5px 1px;
+    background-color: #E8F1F5;
+    color: #2B3E51;
+    
+
+}
+
+.ctc-kiri {
+    width: 400px;
+    border-right: 1px solid;
+}
+
+.ctc-kanan {
+    width: 600px;
+    justify-content: center;
+}
+
+.ctc-kanan img {
+    width: 100%;
+
+}
+
+/* icon sosmed*/
+
+.redirect ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1px;
+}
+
+.redirect img {
+    width: 30px;
+    height: auto;
+    
+}
+
+.redirect img:hover {
+    transform: scale(1.4);
+    transition: all .3s ease;
+}
